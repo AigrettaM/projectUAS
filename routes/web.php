@@ -14,5 +14,41 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/artikel', function () {
+    return view('artikel2');
+});
+
+Route::get('/detail-donasi', function () {
+    return view('detaildonasi');
+});
+
+Route::get('/donasi', function () {
+    return view('donasi');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/location', function () {
+    return view('lokasi');
+});
+
+Route::get('/page-403', function () {
+    return view('page-403');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/stok-darah', function () {
+    return view('stokdarah');
 });

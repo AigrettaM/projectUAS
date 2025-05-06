@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}   
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+header {
+    background: white; /* Warna merah khas donor darah */
+    color: #B31312;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style untuk logo dan teks */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#image1 {
+    width: 80px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+#image2 {
+    width: 75px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo ul{
+    text-decoration: none;
+}
+
+/* Style untuk menu navigasi */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #B31312;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover efek */
+.nav-links a:hover {
+    background: #B31312;
+    color: white;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+#banner {
+    margin: 20px;
+}
+
+.banner {
+    background: #ffeb3b;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    width: 80%;
+    font-weight: bold;
+}
+
+.emergency {
+    background: #B31312;
+    color: white;
+}
+
+.promo {
+    background: #4caf50;
+    color: white;
+}
+
+#statistik {
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#cta {
+    margin: 30px;
+    padding: 20px;
+}
+
+
+button {
+    background: #B31312;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background: rgb(226, 42, 57);
+}
+
+.statistik-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Grafik batang */
+.chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    width: 50%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Batang grafik */
+.bar {
+    width: 50px;
+    background: #B31312;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    height: 0;
+    transition: height 1s ease-in-out;
+}
+
+/* Label pada batang */
+.label {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: black;
+}
+
+/* Bagian teks */
+.info {
+    width: 45%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.info h3 {
+    color: #B31312;
+}
+
+#popup h3{
+    color: #333;
+}
+
+#popup p {
+    font-size: 14px;
+}
+
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.info button {
+    background: #B31312;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+}
+
+#registerpop{
+    text-align: center;
+}
+
+.info button:hover {
+    background: rgb(226, 42, 57);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .statistik-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.footer-top {
+    background-color: #B31312;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-media a img {
+    width: 24px;
+    margin-left: 10px;
+}
+
+.social-media span{
+    font-weight: bold;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 10px;
+    background-color: #333;
+}
+
+footer {
+    color: white;
+} 
+
+/* Background popup dengan efek blur */
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi transparan */
+    backdrop-filter: blur(1px); /* Efek blur */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Konten popup dengan efek scale */
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    transform: scale(0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup-content button {
+    display: block;
+    margin: 10px auto; /* Menengahkan tombol secara horizontal */
+    padding: 10px 15px;
+    background-color: B31312;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Saat popup aktif (fade-in) */
+.popup-container.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-container.show .popup-content {
+    transform: scale(1);
+}
+
+/* Tombol close */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.caption {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 40%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);;
+}
+
+.caption h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.caption p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.donate-btn {
+    background-color: #B31312;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
